@@ -79,7 +79,7 @@ const commands = {
 	},
 	'musicadmin': (msg) => {
 		let tosend = ['```lua', config.prefix + 'join : "Rejoindre le channel"', 
-		config.prefix + 'add : "Seul les liens Youtube sont pris en compte !"', config.prefix + 'queue : "Voir la file d'attente"', config.prefix + 'play : "Jouer les musiques de la file d'attente"', '', 'Commands pendant une musique'.toUpperCase(), config.prefix + 'pause : "mettre en pause"', config.prefix + 'resume : "résumé"', config.prefix + 'skip : "passer la musique"', config.prefix + 'time : "Durée de la musique"',	'volume+(+++) : "augmenter volume 2%/+"',	'volume-(---) : "diminuer volume 2%/-"',	'```'];
+		config.prefix + 'add : "Seul les liens Youtube sont pris en compte !"', config.prefix + 'queue : "Voir la file d\'attente"', config.prefix + 'play : "Jouer les musiques de la file d\'attente"', '', 'Commands pendant une musique'.toUpperCase(), config.prefix + 'pause : "mettre en pause"', config.prefix + 'resume : "résumé"', config.prefix + 'skip : "passer la musique"', config.prefix + 'time : "Durée de la musique"',	'volume+(+++) : "augmenter volume 2%/+"',	'volume-(---) : "diminuer volume 2%/-"',	'```'];
         msg.channel.sendMessage(tosend.join('\n'));
 	},
 	'reboot': (msg) => {
