@@ -14,6 +14,8 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
   if(command === "parole") {
+        if(!message.member.roles.some(r=>["🔨 Administrateur", "📱 Développeur", "💻 Développeur Discord", "🚨 Modérateur"].includes(r.name)) )
+    return message.reply("Tu n'as pas les permissions !");
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
