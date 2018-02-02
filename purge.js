@@ -14,7 +14,8 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 
   if(command === "porge") {
-
+    if(!message.member.roles.some(r=>["🔨 Administrateur", "📱 Développeur", "💻 Développeur Discord", "🚨 Modérateur"].includes(r.name)) )
+    return message.reply("Tu n'as pas les permissions !");
     const deleteCount = parseInt(args[0], 10);
     
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
