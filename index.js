@@ -13,7 +13,7 @@ const demarrage = require("./ready.js")
 const music = require ("./music.js")
 
 // Prefix + Token
-const config = require("./config.json");
+const config = require("./cnfig.json");
 
 // Démarrage du Bot
 client.on("ready", () => {
