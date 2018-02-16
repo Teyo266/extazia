@@ -14,7 +14,7 @@ client.on("message", async message => {
 
   if(command === "kick") {
 
-    if(!message.member.roles.some(r=>["Administrateur", "Développeur", "Développeur DISCORD", "Modérateur", "Assistant"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["🔨 Administrateur", "📱 Développeur", "💻 Développeur Discord", "🚨 Modérateur", "📋 Assistant"].includes(r.name)) )
       return message.reply("Tu n'as pas les permissions !");
     
     let member = message.mentions.members.first();
