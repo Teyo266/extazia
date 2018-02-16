@@ -25,7 +25,7 @@ client.on("message", async message => {
           url: "",
           description: "__**Le centre d'aide est en développement**__",
           fields: [{
-              name: "ptdr t ki",
+              name: "En cours de DEV !",
               value: "Je suis en developpement par Teyo's"
             },
           ],
