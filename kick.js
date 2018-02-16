@@ -31,6 +31,6 @@ client.on("message", async message => {
       .catch(error => message.reply(`Désolé ${message.author} Impossible de Kick car : ${error}`));
     message.reply(`${member.user.tag} a bien été kick par ${message.author.tag} car: ${reason}`);
 
-  }});;
+  }}):):op)
 
   client.login(config.token);
