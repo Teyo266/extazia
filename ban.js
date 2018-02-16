@@ -15,18 +15,18 @@ client.on("message", async message => {
 
 
 if(command === "ban") {
-    if(!message.member.roles.some(r=>["Administrateur", "Développeur", "Développeur DISCORD", "Modérateur"].includes(r.name)) )
-      return message.reply("Sorry, you don't have permissions to use this!");
+    if(!message.member.roles.some(r=>["🔨 Administrateur", "📱 Développeur", "💻 Développeur Discord", "🚨 Modérateur"].includes(r.name)) )
+      return message.reply("Tu n'as pas les permissions !");
     
     let member = message.mentions.members.first();
     if(!member)
-      return message.reply("Please mention a valid member of this server");
+      return message.reply("Mention de l'utilisateur invalide !");
     if(!member.bannable) 
-      return message.reply("I cannot ban this user! Do they have a higher role? Do I have ban permissions?");
+      return message.reply("Impossible de ban ! A t'il un role supérieur ?");
 
     let reason = args.slice(1).join(' ');
     if(!reason)
-      return message.reply("Please indicate a reason for the ban!");
+      return message.reply("Indique une raison du ban !");
     
     await member.ban(reason)
       .catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
