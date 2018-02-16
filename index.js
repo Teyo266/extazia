@@ -17,12 +17,11 @@ const config = require("./config.json");
 
 // Démarrage du Bot
 client.on("ready", () => {
-  console.log(`Bot démarré : 
-  ${client.users.size} utilisateurs.`); 
+  console.log(`Bot démarré : ${client.users.size} utilisateurs.`); 
 
 
 //Joue à ...
-  client.user.setActivity(`être Dev par Teyo's`);
+  client.user.setActivity(`en cours de developpement : Teyo's`);
 });
 
 
